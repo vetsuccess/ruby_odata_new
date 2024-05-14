@@ -8,7 +8,8 @@ require "active_support/inflector"
 require "active_support/core_ext"
 require "cgi"
 require "excon"
-require "faraday_middleware"
+require 'faraday/follow_redirects'
+require 'faraday/net_http_persistent'
 require "faraday"
 require "nokogiri"
 require "bigdecimal"
